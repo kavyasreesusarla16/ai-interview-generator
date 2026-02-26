@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Interview Generator</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 50px;
+        }
+        .box {
+            background: white;
+            color: black;
+            width: 450px;
+            margin: auto;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border-radius: 8px;
+            border: 1px solid #aaa;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #2575fc;
+            border: none;
+            font-size: 18px;
+            color: white;
+            border-radius: 8px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005ae0;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>AI Interview Question Generator</h2>
+
+    <form method="POST">
+
+        <label>Job Role</label>
+        <input type="text" name="role" required>
+
+        <label>Difficulty</label>
+        <select name="difficulty">
+            <option>Easy</option>
+            <option>Medium</option>
+            <option>Hard</option>
+        </select>
+
+        <label>Type of Questions</label>
+        <select name="qtype">
+            <option>Technical</option>
+            <option>Behavioral</option>
+            <option>HR</option>
+            <option>Coding</option>
+            <option>All</option>
+        </select>
+
+        <label>Number of Questions</label>
+        <input type="number" name="count" value="5">
+
+        <button type="submit">Generate</button>
+    </form>
+</div>
+
+</body>
+</html>
